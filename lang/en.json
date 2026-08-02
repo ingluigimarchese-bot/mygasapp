@@ -1,0 +1,25 @@
+{
+  "app": { "title": "MyGasApp", "subtitle": "Initial dashboard of modules." },
+  "nav": { "home": "← Home", "portata": "Gas flow rate calculation", "velocita": "Gas velocity in pipe calculation", "diametri": "Pipe diameter calculation for gas" },
+  "portata": {
+    "title": "Gas flow rate calculation",
+    "subtitle": "Module connected to separate JSON data for fluids, diameters and pressures.",
+    "fields": { "fluid": "Fluid", "pressure": "Pressure P1 [bara]", "velocity": "Selected velocity v [m/s]", "diameter": "Tabulated outside diameter" },
+    "actions": { "suggest": "Use recommended velocity", "reset": "Reset" },
+    "metrics": { "vcons": "Recommended velocity", "di": "Internal diameter Di", "dn": "DN", "pmax": "Max fluid pressure" },
+    "result": { "label": "QVS Flow rate" },
+    "info": { "de": "Outside diameter De", "sp": "Wall thickness", "vclass": "Active velocity class" },
+    "placeholders": { "fluid": "Select fluid", "pressure": "Select pressure", "diameter": "Select diameter" },
+    "messages": { "selectFluid": "Select the gas to update limits and recommended velocity.", "pmax": "For {name} the maximum tabulated pressure is {value} bar." },
+    "classes": { "gt5": "P > 5 bar", "2to5": "2 < P ≤ 5 bar", "0_1to2": "0.1 < P ≤ 2 bar", "lte0_1": "P ≤ 0.1 bar" }
+  },
+  "velocita": {
+    "title": "Gas velocity in pipe calculation",
+    "subtitle": "Calculate gas velocity, erosion velocity and acceptable threshold from fluid, diameter and declared flow rate.",
+    "fields": { "fluid": "Fluid", "pressure": "Pressure P1 [bara]", "diameter": "Tabulated outside diameter", "portata": "Declared flow rate QVS [m3/h]" },
+    "metrics": { "rho": "Standard density", "verosione": "Erosion velocity", "vmax": "Maximum acceptable velocity" },
+    "result": { "label": "Gas velocity v" },
+    "verifica": { "ok": "Velocity within normal range", "warn": "Risk of Vibration and Noise: v > ve/2" }
+  },
+  "diametri": { "title": "Pipe diameter calculation for gas", "subtitle": "Future module." }
+}
