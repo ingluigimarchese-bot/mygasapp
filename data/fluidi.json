@@ -1,0 +1,13 @@
+[
+  { "name": "Acetilene", "molecola": "C2H2", "PM": 26.038, "Zs": 0.993508, "densita_std": 1.0722 },
+  { "name": "Anidride Carbonica", "molecola": "CO2", "PM": 44.01, "Zs": 0.994538, "densita_std": 1.8104 },
+  { "name": "Ammoniaca", "molecola": "NH3", "PM": 17.031, "Zs": 0.98829, "densita_std": 0.7050 },
+  { "name": "Argon", "molecola": "Ar", "PM": 39.948, "Zs": 0.999278, "densita_std": 1.6352 },
+  { "name": "Aria", "molecola": "Aria", "PM": 28.965, "Zs": 0.999613, "densita_std": 1.1856 },
+  { "name": "Azoto", "molecola": "N2", "PM": 28.0134, "Zs": 0.999719, "densita_std": 1.1462 },
+  { "name": "Elio", "molecola": "He", "PM": 4.002602, "Zs": 1.00049, "densita_std": 0.1637 },
+  { "name": "Idrogeno", "molecola": "H2", "PM": 2.01568, "Zs": 1.00059, "densita_std": 0.0824 },
+  { "name": "Metano", "molecola": "CH4", "PM": 16.043, "Zs": 0.998083, "densita_std": 0.6576 },
+  { "name": "Ossigeno", "molecola": "O2", "PM": 31.9988, "Zs": 0.999262, "densita_std": 1.3098 },
+  { "name": "Protossido d'Azoto", "molecola": "N2O", "PM": 44.013, "Zs": 0.994112, "densita_std": 1.8113 }
+]
