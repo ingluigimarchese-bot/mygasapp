@@ -23,19 +23,25 @@ async function loadData(){
 
 function populateSelects(){
   const fluidSel = document.getElementById('fluid');
+  const prevFluid = fluidSel.value;
   let opts = '<option value="">' + t('portata.placeholders.fluid','Seleziona fluido') + '</option>';
   FLUIDI.forEach((fl,i)=>{ opts += '<option value="' + i + '">' + fl.name + '</option>'; });
   fluidSel.innerHTML = opts;
+  if(prevFluid !== '') fluidSel.value = prevFluid;
 
   const pressureSel = document.getElementById('pressure');
+  const prevPressure = pressureSel.value;
   let opts2 = '<option value="">' + t('portata.placeholders.pressure','Seleziona pressione') + '</option>';
   PRESSIONI.forEach(p=>{ opts2 += '<option value="' + p + '">' + p + ' bara</option>'; });
   pressureSel.innerHTML = opts2;
+  if(prevPressure !== '') pressureSel.value = prevPressure;
 
   const diamSel = document.getElementById('diameter');
+  const prevDiam = diamSel.value;
   let opts3 = '<option value="">' + t('portata.placeholders.diameter','Seleziona diametro') + '</option>';
   DIAMETRI.forEach((d,i)=>{ opts3 += '<option value="' + i + '">' + d.label + ' (DN' + d.dn + ')</option>'; });
   diamSel.innerHTML = opts3;
+  if(prevDiam !== '') diamSel.value = prevDiam;
 }
 
 function updateMetrics(){
