@@ -1,0 +1,7 @@
+[
+  { "label": "1/2 in Sch 10s", "dn": 15, "spessore_mm": 2.11, "di_mm": 17.08, "de_mm": 21.3 },
+  { "label": "3/4 in Sch 10s", "dn": 20, "spessore_mm": 2.11, "di_mm": 22.48, "de_mm": 26.7 },
+  { "label": "1 in Sch 10s", "dn": 25, "spessore_mm": 2.77, "di_mm": 27.86, "de_mm": 33.4 },
+  { "label": "1 1/2 in Sch 10s", "dn": 40, "spessore_mm": 2.77, "di_mm": 42.76, "de_mm": 48.3 },
+  { "label": "2 in Sch 10s", "dn": 50, "spessore_mm": 2.77, "di_mm": 54.76, "de_mm": 60.3 }
+]
