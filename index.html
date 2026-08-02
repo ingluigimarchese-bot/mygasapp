@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyGasApp</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="topbar">
+      <div>
+        <h1 data-i18n="app.title">MyGasApp</h1>
+        <p data-i18n="app.subtitle">Dashboard iniziale dei moduli.</p>
+      </div>
+      <select id="language-switcher" aria-label="Language selector">
+        <option value="it">Italiano</option>
+        <option value="en">English</option>
+      </select>
+    </header>
+    <ul class="nav-list">
+      <li><a href="modules/portata.html" data-i18n="nav.portata">Calcolo portata gas in condotta</a></li>
+      <li><a href="modules/velocita.html" data-i18n="nav.velocita">Calcolo velocità gas in condotta</a></li>
+      <li><a href="modules/diametri.html" data-i18n="nav.diametri">Calcolo diametro tubo per gas</a></li>
+    </ul>
+  </main>
+  <script src="js/i18n.js"></script>
+</body>
+</html>
