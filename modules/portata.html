@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MyGasApp - Portata</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<main class="wrap">
+<header class="topbar">
+<div>
+<h1 data-i18n="portata.title">Calcolo portata gas in condotta</h1>
+<p data-i18n="portata.subtitle">Modulo collegato a dati JSON separati per fluidi, diametri e pressioni.</p>
+</div>
+<select id="language-switcher" aria-label="Language selector">
+<option value="it">Italiano</option>
+<option value="en">English</option>
+</select>
+</header>
+<p><a href="../index.html" data-i18n="nav.home">&larr; Home</a></p>
+
+<section class="card-grid">
+<div class="field">
+<label data-i18n="portata.fields.fluid">Fluido</label>
+<select id="fluid"></select>
+</div>
+<div class="field">
+<label data-i18n="portata.fields.pressure">Pressione P1 [bara]</label>
+<select id="pressure"></select>
+</div>
+<div class="field">
+<label data-i18n="portata.fields.diameter">Diametro esterno tabulato</label>
+<select id="diameter"></select>
+</div>
+<div class="field">
+<label data-i18n="portata.fields.velocity">Velocità scelta v [m/s]</label>
+<input type="number" id="velocity" step="0.01">
+<span class="hint" id="velocityHint"></span>
+</div>
+<div class="field full actions">
+<button class="btn" id="suggestBtn" data-i18n="portata.actions.suggest">Usa velocità consigliata</button>
+<button class="btn" id="resetBtn" data-i18n="portata.actions.reset">Reset</button>
+</div>
+</section>
+
+<section class="metrics">
+<div class="metric"><span data-i18n="portata.metrics.vcons">Velocità consigliata</span><strong id="mVcons">-</strong></div>
+<div class="metric"><span data-i18n="portata.metrics.di">Diametro interno Di</span><strong id="mDi">-</strong></div>
+<div class="metric"><span data-i18n="portata.metrics.dn">DN</span><strong id="mDn">-</strong></div>
+<div class="metric"><span data-i18n="portata.metrics.pmax">Pressione max fluido</span><strong id="mPmax">-</strong></div>
+</section>
+
+<section class="result">
+<div class="label" data-i18n="portata.result.label">Portata QVS</div>
+<div class="value" id="resultValue">-</div>
+</section>
+
+<table class="info">
+<tr><td data-i18n="portata.info.de">Diametro esterno De</td><td id="infoDe">-</td></tr>
+<tr><td data-i18n="portata.info.sp">Spessore</td><td id="infoSp">-</td></tr>
+<tr><td data-i18n="portata.info.vclass">Classe velocità attiva</td><td id="infoVclass">-</td></tr>
+</table>
+</main>
+<script src="../js/i18n.js"></script>
+<script src="../js/gas-utils.js"></script>
+<script src="../js/portata.js"></script>
+</body>
+</html>
