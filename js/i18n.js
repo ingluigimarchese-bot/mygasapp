@@ -8,6 +8,7 @@ async function loadLanguage(lang){
   localStorage.setItem('mygasapp_lang', lang);
   const sel = document.getElementById('language-switcher');
   if(sel) sel.value = lang;
+  document.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang, dict } }));
 }
 function t(key,fallback=''){
   const dict = window.currentTranslations || {};
