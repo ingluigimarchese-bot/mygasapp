@@ -1,0 +1,25 @@
+{
+  "app": { "title": "MyGasApp", "subtitle": "Dashboard iniziale dei moduli." },
+  "nav": { "home": "← Home", "portata": "Calcolo portata gas in condotta", "velocita": "Calcolo velocità gas in condotta", "diametri": "Calcolo diametro tubo per gas" },
+  "portata": {
+    "title": "Calcolo portata gas in condotta",
+    "subtitle": "Modulo collegato a dati JSON separati per fluidi, diametri e pressioni.",
+    "fields": { "fluid": "Fluido", "pressure": "Pressione P1 [bara]", "velocity": "Velocità scelta v [m/s]", "diameter": "Diametro esterno tabulato" },
+    "actions": { "suggest": "Usa velocità consigliata", "reset": "Reset" },
+    "metrics": { "vcons": "Velocità consigliata", "di": "Diametro interno Di", "dn": "DN", "pmax": "Pressione max fluido" },
+    "result": { "label": "Portata QVS" },
+    "info": { "de": "Diametro esterno De", "sp": "Spessore", "vclass": "Classe velocità attiva" },
+    "placeholders": { "fluid": "Seleziona fluido", "pressure": "Seleziona pressione", "diameter": "Seleziona diametro" },
+    "messages": { "selectFluid": "Seleziona il gas per aggiornare limiti e velocità consigliata.", "pmax": "Per {name} la pressione tabulata massima è {value} bar." },
+    "classes": { "gt5": "P > 5 bar", "2to5": "2 < P ≤ 5 bar", "0_1to2": "0,1 < P ≤ 2 bar", "lte0_1": "P ≤ 0,1 bar" }
+  },
+  "velocita": {
+    "title": "Calcolo velocità gas in condotta",
+    "subtitle": "Calcola la velocità del gas, la velocità di erosione e la soglia accettabile a partire da fluido, diametro e portata dichiarata.",
+    "fields": { "fluid": "Fluido", "pressure": "Pressione P1 [bara]", "diameter": "Diametro esterno tabulato", "portata": "Portata dichiarata QVS [m3/h]" },
+    "metrics": { "rho": "Densità standard", "verosione": "Velocità di erosione", "vmax": "Massima velocità accettabile" },
+    "result": { "label": "Velocità del gas v" },
+    "verifica": { "ok": "Velocità nella norma", "warn": "Rischio Vibrazioni e Rumore: v > ve/2" }
+  },
+  "diametri": { "title": "Calcolo diametro tubo per gas", "subtitle": "Modulo futuro." }
+}
