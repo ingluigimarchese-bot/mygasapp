@@ -127,3 +127,8 @@ document.addEventListener('DOMContentLoaded', async ()=>{
     updateMetrics();
   });
 });
+
+document.addEventListener('languageChanged', ()=>{
+  populateSelects();
+  updateMetrics();
+});
